@@ -122,7 +122,7 @@ class NodeBT:
         if(self.right is not None):
             self.right.PrintInOrder()
 
-def ConvertDatasetToBinary_V2(data_train, data_test):
+def ConvertDatasetToBinary_V2(data_train, data_test, height_bt, type_root):
     N_train = len(data_train)
     N_test= len(data_test)
     if(N_train<=0 or N_test <= 0):
@@ -130,8 +130,8 @@ def ConvertDatasetToBinary_V2(data_train, data_test):
     
     DIM = len(data_train[0])
     
-    height_bt = 3
-    type_root = "half"
+#     height_bt = 3
+#     type_root = "half"
     
     data_train_B = np.empty([N_train,1])
     data_test_B = np.empty([N_test,1])
@@ -252,15 +252,15 @@ def ConvertDatasetToDiscreteK_V2(data_train, data_test, num_bins):
     
     data_train_K = data_train_K[:,1:]
     data_test_K = data_test_K[:,1:]
-    print(data_train)
-    print(data_train_K)
-    print(data_train_K.shape)
+#     print(data_train)
+#     print(data_train_K)
+#     print(data_train_K.shape)
     
-    print(data_test)
-    print(data_test_K)
-    print(data_test_K.shape)
+#     print(data_test)
+#     print(data_test_K)
+#     print(data_test_K.shape)
     
-    print(sum(abs(data_train_K-data_test_K)))
+#     print(sum(abs(data_train_K-data_test_K)))
     
     return data_train_K, data_test_K
     
