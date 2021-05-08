@@ -1,5 +1,40 @@
 import os
 import numpy as np
+np.set_printoptions(suppress=True)
+
+def LoadData_General(file_name):
+    
+    file_original = open(file_name, "r")
+    Lines = file_original.readlines()
+    
+    
+    X_raw = []
+    Y = []
+    
+    for line in Lines:
+        data = []
+        line = line.replace('\n','')
+        line_split = line.split(',')
+#         print(line)
+
+        label_int = int(line_split[len(line_split)-1])
+        Y.append(label_int)
+
+        for i in range(1,len(line_split)-1):
+            
+            val = float(line_split[i])
+#             print(val)
+
+            data.append(val)
+
+        X_raw.append(data)
+
+    file_original.close()
+    
+    X = np.round(np.array(X_raw), 4)
+    Y = np.array(Y)
+    
+    return X, Y
 
 def LoadData_Abalone():
     
