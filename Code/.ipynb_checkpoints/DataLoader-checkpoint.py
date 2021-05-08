@@ -82,3 +82,32 @@ def LoadData_Banknote():
     Y = np.array(Y)
     
     return X, Y
+
+def LoadData_Turnover():
+    file_original = open("turnover.data", "r")
+    Lines = file_original.readlines()
+
+    X = []
+    Y = []
+
+    for line in Lines:
+        data = []
+        line = line.replace('\n','')
+        line_split = line.split(',')
+
+        label_int = int(line_split[len(line_split)-1])
+        Y.append(label_int)
+
+        for i in range(1,len(line_split)-1):
+            val = float(line_split[i])
+
+            data.append(val)
+
+        X.append(data)
+
+    file_original.close()
+
+    X = np.array(X)
+    Y = np.array(Y)
+
+    return X, Y
