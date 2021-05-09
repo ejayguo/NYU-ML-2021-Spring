@@ -54,6 +54,8 @@ def ConvertContinuousToBinary(array_data, height_bt, type_root):
             bin_i = None
             
             if(data <= value_check):
+                # Bipolar
+#                 bin_i = -1
                 bin_i = 0
                 value_check = value_check - value_check/2
             else:
@@ -95,6 +97,8 @@ class NodeBT:
 #         print(self.val_m)
         
         if(val <= self.val_m):
+            # Bipolar
+#             digit = -1
             digit = 0
         else:
             digit = 1
