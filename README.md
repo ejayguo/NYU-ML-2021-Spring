@@ -4,7 +4,7 @@
 ### The team members are *Yijie Guo* and *Yu Chen* from New York University.
 
 ## [Step 1] 
-Download and install Miniconda
+Download and install Miniconda.
 Please go to the Anaconda website. 
 Download and install the latest Miniconda version.
 
