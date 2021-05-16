@@ -1,5 +1,8 @@
 # NYU-ML-2021-Spring
 
+### This project is the final team-based project for the Machine Learning course. 
+### The team members are *Yijie Guo* and *Yu Chen* from New York University.
+
 ## [Step 1] 
 Download and install Miniconda
 Please go to the Anaconda website. Download and install the latest Miniconda version
