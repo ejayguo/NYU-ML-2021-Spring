@@ -5,7 +5,8 @@
 
 ## [Step 1] 
 Download and install Miniconda
-Please go to the Anaconda website. Download and install the latest Miniconda version
+Please go to the Anaconda website. 
+Download and install the latest Miniconda version.
 
 
 ## [Step 2] 
